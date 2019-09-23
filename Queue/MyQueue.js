@@ -42,11 +42,7 @@ MyQueue.prototype.deQueue = function() {
 * @return {number}
 */
 MyQueue.prototype.Front = function() {
-  if(!this.isEmpty()) {
-      return this.queue[0];
-  } else {
-      return -1;
-  }
+  return !this.isEmpty() ? this.queue[0] : -1;
 };
 
 /**
@@ -54,11 +50,7 @@ MyQueue.prototype.Front = function() {
 * @return {number}
 */
 MyQueue.prototype.Rear = function() {
-  if(!this.isEmpty()) {
-      return this.queue[this.queue.length-1];
-  } else {
-      return -1;
-  }
+  return !this.isEmpty() ? this.queue[this.queue.length-1] : -1;
 };
 
 /**
@@ -66,11 +58,7 @@ MyQueue.prototype.Rear = function() {
 * @return {boolean}
 */
 MyQueue.prototype.isEmpty = function() {
-  if(this.count === 0) {
-      return true;
-  } else {
-      return false;
-  }
+  return this.count === 0;
 };
 
 /**
@@ -78,11 +66,7 @@ MyQueue.prototype.isEmpty = function() {
 * @return {boolean}
 */
 MyQueue.prototype.isFull = function() {
-  if(this.count === this.size) {
-      return true;
-  } else {
-      return false;
-  }
+  return this.count === this.size;
 };
 
 /** 
