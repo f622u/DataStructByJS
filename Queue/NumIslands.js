@@ -1,9 +1,5 @@
 /**
- * 题目名称：岛屿数量
- * @param {*} k 
- */
-
-/**
+ * 岛屿数量
  * @param {character[][]} grid
  * @return {number}
  */

@@ -1,9 +1,5 @@
 /**
- * 题目名称：设计循环队列
- * @param {*} k 
- */
-
-/**
+ * 设计循环队列
  * Initialize your data structure here. Set the size of the queue to be k.
  * @param {number} k
  */

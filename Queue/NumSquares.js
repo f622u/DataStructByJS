@@ -1,9 +1,5 @@
 /**
- * 题目名称：完全平方数
- * @param {*} k 
- */
-
-/**
+ * 完全平方数
  * @param {number} n
  * @return {number}
  */
