@@ -13,9 +13,9 @@
  */
 var reverse = function (x) {
   var re = 0;
-  while (parseInt(x / 10)) {
-      re = 10 * re + x - 10 * parseInt(x / 10);
-      x = parseInt(x / 10);
+  while (parseInt(x / 10)) { // 小数点向左移动一位取整后大于0即为true，小于0即为false
+      re = 10 * re + x - 10 * parseInt(x / 10); // 累加器
+      x = parseInt(x / 10); // new x 为 old x 小数点向左移动一位
   }
   if (re > 214748364 || re < -214748364) return 0; // 如果溢出
   if ((re == 214748364 && x > 7) || (re == 214748364 && x < -8)) return 0;
